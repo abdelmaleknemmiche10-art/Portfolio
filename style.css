@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins" , serif;
+}
+body{
+    background-color: rgb(5, 13, 41);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 1200px;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+img{
+    width: 70px;
+
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navigation a:hover{
+    color: rgb(0, 47, 255);
+
+}
+hr{
+    opacity: 10%;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+.herosub{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.name{
+    font-size: 3rem;
+    color: aliceblue;
+}
+.title{
+    font-size: 4rem;
+    color: aquamarine;
+}
+.herobtn{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.hireme{
+    color: aliceblue;
+    background-color: aquamarine;
+    border-radius: 24px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0, 0.5);
+}
+.imgamico{
+    margin-top: -50px;
+    width: 25rem;
+}
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    width: 1200px;
+    gap: 10rem;
+}
+.aboutmeimg{
+    width: 30rem;
+}
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.texttitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+}
+.aboutname{
+    color: aliceblue;
+}
+.abouttitle{
+    color: aquamarine;
+}
+.paragraph{
+    text-align: justify;
+    color: antiquewhite;
+}
+.works{
+    padding: 10rem 10rem;
+    margin: 7rem;
+}
+.workcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+   
+    max-width: 1200px;
+}
+.projecttitle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    font-size: 2rem;
+    margin-top: -5%;
+    
+}
+.works ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+.works li{
+   border-radius: 16px;
+   background-color: rgb(57, 62, 70, 0.5);
+   backdrop-filter: blur(4px);
+   padding: 20px;
+   margin: 20px;
+}
+.works li img{
+    width: 200Px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+.works li img:hover{
+    transform: scale(1.5);
+}
+.works li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: antiquewhite;
+    text-align: center;
+    
+}
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+.contacttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.emailandphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    gap: 1rem;
+}
+.emailandphone img{
+    width: 30px;
+}
+.emailandphone a{
+   text-decoration: none;
+    color: rgb(252, 251, 251);
+}
+.emailandphone h3{
+    color: aliceblue;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.socialmedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 1rem;
+    background-color: grey;
+    backdrop-filter: blur(4px);
+}
+.socialmedia img{
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+.socialmedia img:hover{
+    transform: scale(1.5);
+}
+footer{
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
